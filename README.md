@@ -1,6 +1,6 @@
 🎮 PAC-MAN - The Lightning That Leads Shadows
 <div align="center">
-  <img src="assets/logo.png" alt="pacman-logo" width="400"/>
+  <img src="assets/logo.png" alt="pacman-logo.png" width="400"/>
 </div>
 ⚡ Sobre o Jogo
 Um jogo Pac-Man moderno desenvolvido em HTML5 Canvas com JavaScript puro, inspirado no clássico arcade com um toque futurístico e neon.
