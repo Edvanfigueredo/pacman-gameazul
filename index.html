@@ -1,2199 +1,429 @@
-<html xmlns:v="urn:schemas-microsoft-com:vml"
-xmlns:o="urn:schemas-microsoft-com:office:office"
-xmlns:w="urn:schemas-microsoft-com:office:word"
-xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
-xmlns="http://www.w3.org/TR/REC-html40">
-
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
-<meta name=ProgId content=Word.Document>
-<meta name=Generator content="Microsoft Word 15">
-<meta name=Originator content="Microsoft Word 15">
-<link rel=File-List href="Código_PacMan_arquivos/filelist.xml">
-<!--[if gte mso 9]><xml>
- <o:DocumentProperties>
-  <o:Author>Edvan Figuerêdo Araujo</o:Author>
-  <o:Template>Normal</o:Template>
-  <o:LastAuthor>Edvan Figuerêdo Araujo</o:LastAuthor>
-  <o:Revision>1</o:Revision>
-  <o:TotalTime>2</o:TotalTime>
-  <o:Created>2025-07-30T21:07:00Z</o:Created>
-  <o:LastSaved>2025-07-30T21:09:00Z</o:LastSaved>
-  <o:Pages>14</o:Pages>
-  <o:Words>2262</o:Words>
-  <o:Characters>12221</o:Characters>
-  <o:Lines>101</o:Lines>
-  <o:Paragraphs>28</o:Paragraphs>
-  <o:CharactersWithSpaces>14455</o:CharactersWithSpaces>
-  <o:Version>16.00</o:Version>
- </o:DocumentProperties>
- <o:OfficeDocumentSettings>
-  <o:AllowPNG/>
- </o:OfficeDocumentSettings>
-</xml><![endif]-->
-<link rel=themeData href="Código_PacMan_arquivos/themedata.thmx">
-<link rel=colorSchemeMapping
-href="Código_PacMan_arquivos/colorschememapping.xml">
-<!--[if gte mso 9]><xml>
- <w:WordDocument>
-  <w:SpellingState>Clean</w:SpellingState>
-  <w:GrammarState>Clean</w:GrammarState>
-  <w:TrackMoves>false</w:TrackMoves>
-  <w:TrackFormatting/>
-  <w:HyphenationZone>21</w:HyphenationZone>
-  <w:PunctuationKerning/>
-  <w:ValidateAgainstSchemas/>
-  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
-  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
-  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
-  <w:DoNotPromoteQF/>
-  <w:LidThemeOther>PT-BR</w:LidThemeOther>
-  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
-  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
-  <w:Compatibility>
-   <w:BreakWrappedTables/>
-   <w:SnapToGridInCell/>
-   <w:WrapTextWithPunct/>
-   <w:UseAsianBreakRules/>
-   <w:DontGrowAutofit/>
-   <w:SplitPgBreakAndParaMark/>
-   <w:EnableOpenTypeKerning/>
-   <w:DontFlipMirrorIndents/>
-   <w:OverrideTableStyleHps/>
-  </w:Compatibility>
-  <m:mathPr>
-   <m:mathFont m:val="Cambria Math"/>
-   <m:brkBin m:val="before"/>
-   <m:brkBinSub m:val="&#45;-"/>
-   <m:smallFrac m:val="off"/>
-   <m:dispDef/>
-   <m:lMargin m:val="0"/>
-   <m:rMargin m:val="0"/>
-   <m:defJc m:val="centerGroup"/>
-   <m:wrapIndent m:val="1440"/>
-   <m:intLim m:val="subSup"/>
-   <m:naryLim m:val="undOvr"/>
-  </m:mathPr></w:WordDocument>
-</xml><![endif]--><!--[if gte mso 9]><xml>
- <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
-  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
-  LatentStyleCount="376">
-  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
-  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
-  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
-   UnhideWhenUsed="true" QFormat="true" Name="heading 2"/>
-  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
-   UnhideWhenUsed="true" QFormat="true" Name="heading 3"/>
-  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
-   UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>
-  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
-   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
-  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
-   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
-  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
-   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
-  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
-   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
-  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
-   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index 4"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index 5"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index 6"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index 7"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index 8"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index 9"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" Name="toc 1"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" Name="toc 2"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" Name="toc 3"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" Name="toc 4"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" Name="toc 5"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" Name="toc 6"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" Name="toc 7"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" Name="toc 8"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" Name="toc 9"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Normal Indent"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="footnote text"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="annotation text"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="header"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="footer"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index heading"/>
-  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
-   UnhideWhenUsed="true" QFormat="true" Name="caption"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="table of figures"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="envelope address"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="envelope return"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="footnote reference"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="annotation reference"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="line number"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="page number"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="endnote reference"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="endnote text"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="table of authorities"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="macro"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="toa heading"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Bullet"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Number"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List 4"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List 5"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Bullet 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Bullet 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Bullet 4"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Bullet 5"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Number 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Number 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Number 4"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Number 5"/>
-  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Closing"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Signature"/>
-  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
-   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Body Text"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Body Text Indent"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Continue"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Continue 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Continue 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Continue 4"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Continue 5"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Message Header"/>
-  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Salutation"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Date"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Body Text First Indent"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Body Text First Indent 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Note Heading"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Body Text 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Body Text 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Body Text Indent 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Body Text Indent 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Block Text"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Hyperlink"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="FollowedHyperlink"/>
-  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
-  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Document Map"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Plain Text"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="E-mail Signature"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Top of Form"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Bottom of Form"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Normal (Web)"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Acronym"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Address"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Cite"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Code"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Definition"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Keyboard"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Preformatted"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Sample"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Typewriter"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Variable"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Normal Table"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="annotation subject"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="No List"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Outline List 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Outline List 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Outline List 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Simple 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Simple 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Simple 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Classic 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Classic 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Classic 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Classic 4"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Colorful 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Colorful 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Colorful 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Columns 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Columns 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Columns 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Columns 4"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Columns 5"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Grid 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Grid 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Grid 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Grid 4"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Grid 5"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Grid 6"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Grid 7"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Grid 8"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table List 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table List 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table List 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table List 4"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table List 5"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table List 6"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table List 7"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table List 8"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table 3D effects 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table 3D effects 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table 3D effects 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Contemporary"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Elegant"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Professional"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Subtle 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Subtle 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Web 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Web 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Web 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Balloon Text"/>
-  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Theme"/>
-  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
-  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
-  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
-  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
-  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
-  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
-  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
-  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
-  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
-  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
-  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
-  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
-  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
-  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
-  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
-  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
-  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
-  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
-  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
-  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
-  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
-  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
-  <w:LsdException Locked="false" Priority="34" QFormat="true"
-   Name="List Paragraph"/>
-  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
-  <w:LsdException Locked="false" Priority="30" QFormat="true"
-   Name="Intense Quote"/>
-  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
-  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
-  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
-  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
-  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
-  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
-  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
-  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
-  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
-  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
-  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
-  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
-  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
-  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
-  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
-  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
-  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
-  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
-  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
-  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
-  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
-  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
-  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
-  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
-  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
-  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
-  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
-  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
-  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
-  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
-  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
-  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
-  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
-  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
-  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
-  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
-  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
-  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
-  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
-  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
-  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
-  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
-  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
-  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
-  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
-  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
-  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
-  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
-  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
-  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
-  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
-  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
-  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
-  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
-  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
-  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
-  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
-  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
-  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
-  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
-  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
-  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
-  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
-  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
-  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
-  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
-  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
-  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
-  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
-  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
-  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
-  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
-  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
-  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
-  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
-  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
-  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
-  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
-  <w:LsdException Locked="false" Priority="19" QFormat="true"
-   Name="Subtle Emphasis"/>
-  <w:LsdException Locked="false" Priority="21" QFormat="true"
-   Name="Intense Emphasis"/>
-  <w:LsdException Locked="false" Priority="31" QFormat="true"
-   Name="Subtle Reference"/>
-  <w:LsdException Locked="false" Priority="32" QFormat="true"
-   Name="Intense Reference"/>
-  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
-  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
-   UnhideWhenUsed="true" Name="Bibliography"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
-  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
-  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
-  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
-  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
-  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
-  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
-  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
-  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
-  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
-  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
-  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
-  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
-  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="Grid Table 1 Light Accent 1"/>
-  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
-  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
-  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
-  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="Grid Table 6 Colorful Accent 1"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="Grid Table 7 Colorful Accent 1"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="Grid Table 1 Light Accent 2"/>
-  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
-  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
-  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
-  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="Grid Table 6 Colorful Accent 2"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="Grid Table 7 Colorful Accent 2"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="Grid Table 1 Light Accent 3"/>
-  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
-  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
-  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
-  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="Grid Table 6 Colorful Accent 3"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="Grid Table 7 Colorful Accent 3"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="Grid Table 1 Light Accent 4"/>
-  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
-  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
-  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
-  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="Grid Table 6 Colorful Accent 4"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="Grid Table 7 Colorful Accent 4"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="Grid Table 1 Light Accent 5"/>
-  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
-  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
-  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
-  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="Grid Table 6 Colorful Accent 5"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="Grid Table 7 Colorful Accent 5"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="Grid Table 1 Light Accent 6"/>
-  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
-  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
-  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
-  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="Grid Table 6 Colorful Accent 6"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="Grid Table 7 Colorful Accent 6"/>
-  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
-  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
-  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
-  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
-  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
-  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
-  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="List Table 1 Light Accent 1"/>
-  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
-  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
-  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
-  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="List Table 6 Colorful Accent 1"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="List Table 7 Colorful Accent 1"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="List Table 1 Light Accent 2"/>
-  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
-  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
-  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
-  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="List Table 6 Colorful Accent 2"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="List Table 7 Colorful Accent 2"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="List Table 1 Light Accent 3"/>
-  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
-  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
-  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
-  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="List Table 6 Colorful Accent 3"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="List Table 7 Colorful Accent 3"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="List Table 1 Light Accent 4"/>
-  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
-  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
-  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
-  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="List Table 6 Colorful Accent 4"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="List Table 7 Colorful Accent 4"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="List Table 1 Light Accent 5"/>
-  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
-  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
-  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
-  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="List Table 6 Colorful Accent 5"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="List Table 7 Colorful Accent 5"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="List Table 1 Light Accent 6"/>
-  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
-  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
-  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
-  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="List Table 6 Colorful Accent 6"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="List Table 7 Colorful Accent 6"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Mention"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Smart Hyperlink"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Hashtag"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Unresolved Mention"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Smart Link"/>
- </w:LatentStyles>
-</xml><![endif]-->
-<style>
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;
-	mso-font-charset:0;
-	mso-generic-font-family:roman;
-	mso-font-pitch:variable;
-	mso-font-signature:3 0 0 0 1 0;}
-@font-face
-	{font-family:Calibri;
-	panose-1:2 15 5 2 2 2 4 3 2 4;
-	mso-font-charset:0;
-	mso-generic-font-family:swiss;
-	mso-font-pitch:variable;
-	mso-font-signature:-469750017 -1040178053 9 0 511 0;}
-@font-face
-	{font-family:"Segoe UI Emoji";
-	panose-1:2 11 5 2 4 2 4 2 2 3;
-	mso-font-charset:0;
-	mso-generic-font-family:swiss;
-	mso-font-pitch:variable;
-	mso-font-signature:3 33554432 134217728 0 1 0;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-parent:"";
-	margin-top:0cm;
-	margin-right:0cm;
-	margin-bottom:8.0pt;
-	margin-left:0cm;
-	line-height:107%;
-	mso-pagination:widow-orphan;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;
-	mso-ascii-font-family:Calibri;
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:Calibri;
-	mso-fareast-theme-font:minor-latin;
-	mso-hansi-font-family:Calibri;
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:minor-bidi;
-	mso-fareast-language:EN-US;}
-span.SpellE
-	{mso-style-name:"";
-	mso-spl-e:yes;}
-span.GramE
-	{mso-style-name:"";
-	mso-gram-e:yes;}
-.MsoChpDefault
-	{mso-style-type:export-only;
-	mso-default-props:yes;
-	font-family:"Calibri",sans-serif;
-	mso-ascii-font-family:Calibri;
-	mso-ascii-theme-font:minor-latin;
-	mso-fareast-font-family:Calibri;
-	mso-fareast-theme-font:minor-latin;
-	mso-hansi-font-family:Calibri;
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:minor-bidi;
-	mso-fareast-language:EN-US;}
-.MsoPapDefault
-	{mso-style-type:export-only;
-	margin-bottom:8.0pt;
-	line-height:107%;}
-@page WordSection1
-	{size:595.3pt 841.9pt;
-	margin:70.85pt 3.0cm 70.85pt 3.0cm;
-	mso-header-margin:35.4pt;
-	mso-footer-margin:35.4pt;
-	mso-paper-source:0;}
-div.WordSection1
-	{page:WordSection1;}
--->
-</style>
-<!--[if gte mso 10]>
-<style>
- /* Style Definitions */
- table.MsoNormalTable
-	{mso-style-name:"Tabela normal";
-	mso-tstyle-rowband-size:0;
-	mso-tstyle-colband-size:0;
-	mso-style-noshow:yes;
-	mso-style-priority:99;
-	mso-style-parent:"";
-	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
-	mso-para-margin-top:0cm;
-	mso-para-margin-right:0cm;
-	mso-para-margin-bottom:8.0pt;
-	mso-para-margin-left:0cm;
-	line-height:107%;
-	mso-pagination:widow-orphan;
-	font-size:11.0pt;
-	font-family:"Calibri",sans-serif;
-	mso-ascii-font-family:Calibri;
-	mso-ascii-theme-font:minor-latin;
-	mso-hansi-font-family:Calibri;
-	mso-hansi-theme-font:minor-latin;
-	mso-bidi-font-family:"Times New Roman";
-	mso-bidi-theme-font:minor-bidi;
-	mso-fareast-language:EN-US;}
-</style>
-<![endif]--><!--[if gte mso 9]><xml>
- <o:shapedefaults v:ext="edit" spidmax="1026"/>
-</xml><![endif]--><!--[if gte mso 9]><xml>
- <o:shapelayout v:ext="edit">
-  <o:idmap v:ext="edit" data="1"/>
- </o:shapelayout></xml><![endif]-->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pac-Man Estilo Azul</title>
+  <style>
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #222;
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+  canvas {
+    background-color: #0000FF; /* Fundo azul escuro */
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #0000FF;
+    cursor: pointer;
+  }
+  #score {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  #power-timer {
+    font-size: 18px;
+    color: yellow;
+    height: 20px;
+  }
+  #message {
+    font-size: 18px;
+    color: #FF0000;
+    height: 20px;
+  }
+  </style>
 </head>
-
-<body lang=PT-BR style='tab-interval:35.4pt;word-wrap:break-word'>
-
-<div class=WordSection1>
-
-<p class=MsoNormal>&lt;!DOCTYPE <span class=SpellE>html</span>&gt;<o:p></o:p></p>
-
-<p class=MsoNormal>&lt;<span class=SpellE>html</span> <span class=SpellE>lang</span>=&quot;<span
-class=SpellE>pt-br</span>&quot;&gt;<o:p></o:p></p>
-
-<p class=MsoNormal>&lt;<span class=SpellE>head</span>&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>&lt;meta <span
-class=SpellE>charset</span>=&quot;UTF-8&quot; /&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>&lt;meta <span
-class=SpellE>name</span>=&quot;<span class=SpellE>viewport</span>&quot; <span
-class=SpellE>content</span>=&quot;<span class=SpellE>width</span>=device-<span
-class=SpellE>width</span>, <span class=SpellE>initial-scale</span>=1.0&quot;
-/&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>&lt;<span
-class=SpellE>title</span>&gt;<span class=SpellE>Pac</span>-Man Estilo Azul&lt;/<span
-class=SpellE>title</span>&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>&lt;<span
-class=SpellE>style</span>&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>body {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>margin</span>: 0;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>display: <span
-class=SpellE>flex</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>flex-direction</span>: <span class=SpellE>column</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>align-items</span>: center;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>background-color:
-#222;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>font-family</span>: Arial, <span class=SpellE>sans-serif</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>color: <span
-class=SpellE>white</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span><span class=SpellE>canvas</span>
-{<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>background-color:
-#0000FF; /* Fundo azul escuro */<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>display: <span
-class=SpellE>block</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>margin</span>: 20px auto;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>border</span>: 2px <span class=SpellE>solid</span> #0000FF;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>cursor: pointer;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>#score {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>font-size</span>: 24px;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>margin-bottom</span>: 5px;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>#power-timer {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>font-size</span>: 18px;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>color: <span
-class=SpellE>yellow</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>height</span>: 20px;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>#message {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>font-size</span>: 18px;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>color: #FF0000;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>height</span>: 20px;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>&lt;/<span
-class=SpellE>style</span>&gt;<o:p></o:p></p>
-
-<p class=MsoNormal>&lt;/<span class=SpellE>head</span>&gt;<o:p></o:p></p>
-
-<p class=MsoNormal>&lt;body&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>&lt;h1&gt;<span
-class=SpellE>Pac</span>-Man Estilo Azul&lt;/h1&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>&lt;<span
-class=SpellE>div</span> id=&quot;score&quot;&gt;Pontos: 0&lt;/<span
-class=SpellE>div</span>&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>&lt;<span
-class=SpellE>div</span> id=&quot;<span class=SpellE>power</span>-timer&quot;&gt;&lt;/<span
-class=SpellE>div</span>&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>&lt;<span
-class=SpellE>div</span> id=&quot;<span class=SpellE>message</span>&quot;&gt;&lt;/<span
-class=SpellE>div</span>&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>&lt;<span
-class=SpellE>div</span> id=&quot;<span class=SpellE>startScreen</span>&quot; <span
-class=SpellE>style</span>=&quot;position: <span class=SpellE>relative</span>; <span
-class=SpellE>width</span>: 600px; <span class=SpellE>height</span>: 400px;
-background: <span class=SpellE>url</span>('<span class=SpellE>assets</span>/logo.jpg')
-center/cover; <span class=SpellE>border</span>: 2px <span class=SpellE>solid</span>
-#0000FF; cursor: pointer; display: <span class=SpellE>flex</span>; <span
-class=SpellE>align-items</span>: center; <span class=SpellE>justify-content</span>:
-center;&quot;&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>&lt;<span
-class=SpellE>div</span> <span class=SpellE>style</span>=&quot;background: <span
-class=SpellE><span class=GramE>rgba</span></span><span class=GramE>(</span>0,0,0,0.7);
-<span class=SpellE>padding</span>: 20px; <span class=SpellE>border-radius</span>:
-10px; <span class=SpellE>text-align</span>: center;&quot;&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>&lt;h2 <span
-class=SpellE>style</span>=&quot;color: #FFFF00; <span class=SpellE>margin</span>:
-0 0 10px 0;&quot;&gt;CLIQUE PARA JOGAR&lt;/h2&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>&lt;p <span
-class=SpellE>style</span>=&quot;color: <span class=SpellE>white</span>; <span
-class=SpellE>margin</span>: 0;&quot;&gt;Use as setas ou mouse para se
-mover&lt;/p&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>&lt;/<span
-class=SpellE>div</span>&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>&lt;/<span
-class=SpellE>div</span>&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>&lt;<span
-class=SpellE>canvas</span> id=&quot;<span class=SpellE>gameCanvas</span>&quot; <span
-class=SpellE>width</span>=&quot;600&quot; <span class=SpellE>height</span>=&quot;400&quot;
-<span class=SpellE>style</span>=&quot;display: <span class=SpellE>none</span>;&quot;&gt;&lt;/<span
-class=SpellE>canvas</span>&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>&lt;script&gt;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>const</span> <span class=SpellE>canvas</span> = <span
-class=SpellE><span class=GramE>document.getElementById</span></span>('<span
-class=SpellE>gameCanvas</span>');<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>const</span> <span class=SpellE>ctx</span> = <span class=SpellE><span
-class=GramE>canvas.getContext</span></span>('2d');<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>const</span> <span class=SpellE>scoreElement</span> = <span
-class=SpellE><span class=GramE>document.getElementById</span></span>('score');<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>const</span> <span class=SpellE>timerElement</span> = <span
-class=SpellE><span class=GramE>document.getElementById</span></span>('<span
-class=SpellE>power</span>-timer');<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>const</span> <span class=SpellE>messageElement</span> = <span
-class=SpellE><span class=GramE>document.getElementById</span></span>('<span
-class=SpellE>message</span>');<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>// Web <span
-class=SpellE>Audio</span> API<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>const</span> <span class=SpellE>AudioContext</span> = <span
-class=SpellE><span class=GramE>window.AudioContext</span></span> || <span
-class=SpellE>window.webkitAudioContext</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>const</span> <span class=SpellE>audioCtx</span> = new <span
-class=SpellE><span class=GramE>AudioContext</span></span><span class=GramE>(</span>);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>// Cores<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>const</span> cores = {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>azul: '#0000FF',<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>vermelho:
-'#FF0000',<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>cinza:
-'#AAAAAA',<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>amarelo:
-'#FFFF00',<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>dot</span>: '#00FFFF',<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>preto: '#000000'<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>};<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>// <span
-class=SpellE>Pac</span>-Man<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>let</span> <span class=SpellE>pacManX</span> = 300;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>let</span> <span class=SpellE>pacManY</span> = 200;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>const</span> <span class=SpellE>pacManRadius</span> = 30;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>// Velocidade<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>const</span> <span class=SpellE>pacSpeed</span> = 3;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>// Teclado<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>const</span> <span class=SpellE>keys</span> = {};<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE><span class=GramE>window.addEventListener</span></span>('<span
-class=SpellE>keydown</span>', (e) =&gt; {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>keys</span>[<span class=SpellE>e.key</span>] = <span class=SpellE>true</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>});<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE><span class=GramE>window.addEventListener</span></span>('<span
-class=SpellE>keyup</span>', (e) =&gt; {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>keys</span>[<span class=SpellE>e.key</span>] = false;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>});<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>// Mouse<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>let</span> <span class=SpellE>mouseX</span> = <span class=SpellE>pacManX</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>let</span> <span class=SpellE>mouseY</span> = <span class=SpellE>pacManY</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE><span class=GramE>canvas.addEventListener</span></span>('<span
-class=SpellE>mousemove</span>', (e) =&gt; {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>const</span> <span class=SpellE>rect</span> = <span class=SpellE><span
-class=GramE>canvas.getBoundingClientRect</span></span>();<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>mouseX</span> = <span class=SpellE><span class=GramE>e.clientX</span></span>
-- <span class=SpellE>rect.left</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>mouseY</span> = <span class=SpellE><span class=GramE>e.clientY</span></span>
-- <span class=SpellE>rect.top</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>});<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>// Fantasma<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>let</span> <span class=SpellE>ghost</span> = {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>x: 100,<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>y: 100,<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>radius</span>: 26,<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>speed</span>: 2.2<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>};<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>// <span
-class=SpellE>Dots</span><o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>const</span> <span class=SpellE>dots</span> = [];<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>const</span> <span class=SpellE>dotRadius</span> = 6;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>// Power-<span
-class=SpellE>up</span><o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>let</span> <span class=SpellE>powerUp</span> = <span class=GramE>{
-x</span>: -50, y: -50 };<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>const</span> <span class=SpellE>powerUpRadius</span> = 10;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>let</span> <span class=SpellE>powerUpActive</span> = false;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>let</span> <span class=SpellE>powerUpTimer</span> = 0;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>let</span> <span class=SpellE>powerUpVisible</span> = false;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>// Partículas de
-explosão<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>const</span> <span class=SpellE>particles</span> = [];<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>function</span> <span class=SpellE><span class=GramE>createParticle</span></span><span
-class=GramE>(</span>x, y, color) {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>return</span> {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>x, y,<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>vx</span>: (<span class=SpellE>Math.random</span>() - 0.5) * 8,<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>vy</span>: (<span class=SpellE>Math.random</span>() - 0.5) * 8,<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>radius</span>: <span class=SpellE>Math.random</span>() * 3 + 2,<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>color,<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>alpha: 1,<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>decay</span>: <span class=SpellE>Math.random</span>() * 0.05 +
-0.02<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>};<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>function</span> <span class=GramE>explode(</span>x, y, color, <span
-class=SpellE>count</span> = 15) {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>for (<span
-class=SpellE>let</span> i = 0; i &lt; <span class=SpellE>count</span>; i++) {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE><span class=GramE>particles.push</span></span>(<span class=SpellE>createParticle</span>(x,
-y, color));<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>function</span> <span class=SpellE><span class=GramE>createDots</span></span><span
-class=GramE>(</span>) {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE><span class=GramE>dots.length</span></span> = 0;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>for (<span
-class=SpellE>let</span> i = 0; i &lt; 20; i++) {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>let</span> x, y;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>let</span> <span class=SpellE>overlap</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>do {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>         </span><span
-style='mso-spacerun:yes'> </span><span class=SpellE>overlap</span> = false;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span>x = <span
-class=SpellE>dotRadius</span> * 3 + <span class=SpellE>Math.random</span>() * (<span
-class=SpellE><span class=GramE>canvas.width</span></span> - <span class=SpellE>dotRadius</span>
-* 6);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span>y = <span
-class=SpellE>dotRadius</span> * 3 + <span class=SpellE>Math.random</span>() * (<span
-class=SpellE><span class=GramE>canvas.height</span></span> - <span
-class=SpellE>dotRadius</span> * 6);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span><span
-class=SpellE>if</span> (<span class=SpellE>Math.hypot</span>(x - <span
-class=SpellE>pacManX</span>, y - <span class=SpellE>pacManY</span>) &lt; 50) {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>            </span><span
-class=SpellE>overlap</span> = <span class=SpellE>true</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>continue;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span>for (<span
-class=SpellE>const</span> <span class=SpellE>dot</span> <span class=SpellE>of</span>
-<span class=SpellE>dots</span>) {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>            </span><span
-class=SpellE>if</span> (<span class=SpellE>Math.hypot</span>(<span
-class=SpellE>dot.x</span> - x, <span class=SpellE><span class=GramE>dot.y</span></span>
-- y) &lt; 30) {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>              </span><span
-class=SpellE>overlap</span> = <span class=SpellE>true</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>              </span>break;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>            </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>} <span
-class=SpellE>while</span> (<span class=SpellE>overlap</span>);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE><span class=GramE>dots.push</span></span>({ x, y });<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>function</span> <span class=SpellE><span class=GramE>spawnPowerUp</span></span><span
-class=GramE>(</span>) {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>let</span> x, y;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>do {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>x = <span
-class=SpellE>powerUpRadius</span> * 2 + <span class=SpellE>Math.random</span>()
-* (<span class=SpellE><span class=GramE>canvas.width</span></span> - <span
-class=SpellE>powerUpRadius</span> * 4);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>y = <span
-class=SpellE>powerUpRadius</span> * 2 + <span class=SpellE>Math.random</span>()
-* (<span class=SpellE><span class=GramE>canvas.height</span></span> - <span
-class=SpellE>powerUpRadius</span> * 4);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>} <span
-class=SpellE>while</span> (<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>Math.hypot</span>(x - <span class=SpellE>pacManX</span>, y - <span
-class=SpellE>pacManY</span>) &lt; 50 ||<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE><span class=GramE>dots.some</span></span>(<span class=SpellE>dot</span>
-=&gt; <span class=SpellE>Math.hypot</span>(<span class=SpellE>dot.x</span> - x,
-<span class=SpellE>dot.y</span> - y) &lt; 30)<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>powerUp</span> = <span class=GramE>{ x</span>, y };<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>   </span><span
-style='mso-spacerun:yes'>   </span><span class=SpellE>powerUpVisible</span> = <span
-class=SpellE>true</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE><span class=GramE>createDots</span></span><span class=GramE>(</span>);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE><span class=GramE>setTimeout</span></span><span class=GramE>(</span><span
-class=SpellE>spawnPowerUp</span>, 3000);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>let</span> score = 0;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>let</span> <span class=SpellE>ghostSoundActive</span> = false;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>let</span> <span class=SpellE>ghostSoundOsc</span> = <span
-class=SpellE>null</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>let</span> <span class=SpellE>ghostSoundGain</span> = <span
-class=SpellE>null</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>// Função para
-tocar som<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>function</span> <span class=SpellE><span class=GramE>playSound</span></span><span
-class=GramE>(</span><span class=SpellE>frequency</span>, <span class=SpellE>duration</span>,
-<span class=SpellE>type</span> = '<span class=SpellE>sine</span>', volume =
-0.2) {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>if</span> (<span class=SpellE>audioCtx.state</span> === '<span
-class=SpellE>suspended</span>') <span class=SpellE>audioCtx.resume</span>();<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>const</span> <span class=SpellE>osc</span> = <span class=SpellE>audioCtx.createOscillator</span>();<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>const</span> <span class=SpellE>gain</span> = <span class=SpellE>audioCtx.createGain</span>();<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE><span class=GramE>osc.type</span></span> = <span class=SpellE>type</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE><span class=GramE>osc.frequency</span>.setValueAtTime</span>(<span
-class=SpellE>frequency</span>, <span class=SpellE>audioCtx.currentTime</span>);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE><span class=GramE>gain.gain</span>.setValueAtTime</span>(volume, <span
-class=SpellE>audioCtx.currentTime</span>);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE><span class=GramE>osc.connect</span></span>(<span class=SpellE>gain</span>);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE><span class=GramE>gain.connect</span></span>(<span class=SpellE>audioCtx.destination</span>);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE><span class=GramE>osc.start</span></span>();<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE><span class=GramE>osc.stop</span></span>(<span class=SpellE>audioCtx.currentTime</span>
-+ <span class=SpellE>duration</span>);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>// Som de tensão
-(fantasma próximo)<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>function</span> <span class=SpellE><span class=GramE>startGhostTensionSound</span></span><span
-class=GramE>(</span>) {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>if</span> (<span class=SpellE>ghostSoundActive</span> |<span
-class=GramE>| !<span class=SpellE>audioCtx</span></span>) <span class=SpellE>return</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>ghostSoundActive</span> = <span class=SpellE>true</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>ghostSoundOsc</span> = <span class=SpellE>audioCtx.createOscillator</span>();<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>ghostSoundGain</span> = <span class=SpellE>audioCtx.createGain</span>();<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>ghostSoundOsc.type</span> = '<span class=SpellE>sawtooth</span>';<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE><span class=GramE>ghostSoundOsc.frequency.setValueAtTime</span></span>(120,
-<span class=SpellE>audioCtx.currentTime</span>);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE><span class=GramE>ghostSoundGain.gain.setValueAtTime</span></span>(0.1,
-<span class=SpellE>audioCtx.currentTime</span>);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>ghostSoundOsc.connect</span>(<span class=SpellE>ghostSoundGain</span>);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>ghostSoundGain.connect</span>(<span class=SpellE>audioCtx.destination</span>);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>ghostSoundOsc.start</span>();<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>function</span> <span class=SpellE>updateGhostTensionSound</span>(<span
-class=SpellE>distance</span>) {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>if</span> <span class=GramE>(!<span class=SpellE>ghostSoundActive</span></span>)
-<span class=SpellE>return</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>const</span> <span class=SpellE>minDist</span> = 100;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>const</span> <span class=SpellE>maxVol</span> = 0.2;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-style='mso-spacerun:yes'>  </span><span class=SpellE>const</span> <span
-class=SpellE>vol</span> = <span class=SpellE><span class=GramE>Math.max</span></span><span
-class=GramE>(</span>0, (<span class=SpellE>minDist</span> - <span class=SpellE>distance</span>)
-/ <span class=SpellE>minDist</span>) * <span class=SpellE>maxVol</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>if</span> (<span class=SpellE>ghostSoundGain</span>) {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE><span class=GramE>ghostSoundGain.gain.setValueAtTime</span></span>(<span
-class=SpellE>vol</span>, <span class=SpellE>audioCtx.currentTime</span>);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>function</span> <span class=SpellE><span class=GramE>stopGhostTensionSound</span></span><span
-class=GramE>(</span>) {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>if</span> (<span class=SpellE>ghostSoundActive</span> &amp;&amp; <span
-class=SpellE>ghostSoundOsc</span>) {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>ghostSoundOsc.stop</span>();<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>ghostSoundOsc</span> = <span class=SpellE>null</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>ghostSoundGain</span> = <span class=SpellE>null</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>ghostSoundActive</span> = false;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>// Animação da
-boca<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>let</span> <span class=SpellE>mouthOpen</span> = <span
-class=SpellE>true</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>let</span> <span class=SpellE>mouthAngle</span> = 0.2;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>function</span> <span class=SpellE><span class=GramE>resetGame</span></span><span
-class=GramE>(</span>) {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>score = 0;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>scoreElement.textContent</span> = `Pontos: ${score}`;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>messageElement.textContent</span> = &quot;Você foi pego!
-Reiniciando...&quot;;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE><span class=GramE>setTimeout</span></span><span class=GramE>(</span>()
-=&gt; {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>messageElement.textContent</span> = &quot;&quot;;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>pacManX</span> = 300;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span><span
-style='mso-spacerun:yes'>      </span><span class=SpellE>pacManY</span> = 200;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>ghost.x</span> = 100;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE><span class=GramE>ghost.y</span></span> = 100;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE><span class=GramE>createDots</span></span><span class=GramE>(</span>);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>if</span> <span class=GramE>(!<span class=SpellE>powerUpActive</span></span>)
-<span class=SpellE>spawnPowerUp</span>();<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>}, 1000);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>// Loop principal<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>function</span> <span class=GramE>loop(</span>) {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>// Atualiza
-temporizador<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>if</span> (<span class=SpellE>powerUpActive</span>) {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>powerUpTimer</span> -= 1/60;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>if</span> (<span class=SpellE>powerUpTimer</span> &lt;= 0) {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span><span
-class=SpellE>powerUpActive</span> = false;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span><span
-class=SpellE>timerElement.textContent</span> = &quot;&quot;;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>} <span
-class=SpellE>else</span> {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span><span
-class=SpellE>timerElement.textContent</span> = `Power: ${<span class=SpellE>Math.ceil</span>(<span
-class=SpellE>powerUpTimer</span><span class=GramE>)}s</span>`;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>} <span
-class=SpellE>else</span> {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>timerElement.textContent</span> = &quot;&quot;;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE><span class=GramE>ctx.clearRect</span></span>(0, 0, <span
-class=SpellE>canvas.width</span>, <span class=SpellE>canvas.height</span>);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>// Movimento do <span
-class=SpellE>Pac</span>-Man<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>if</span> (<span class=SpellE>keys</span>['<span class=SpellE>ArrowUp</span>']
-&amp;&amp; <span class=SpellE>pacManY</span> &gt; <span class=SpellE>pacManRadius</span>)
-<span class=SpellE>pacManY</span> -= <span class=SpellE>pacSpeed</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>if</span> (<span class=SpellE>keys</span>['<span class=SpellE>ArrowDown</span>']
-&amp;&amp; <span class=SpellE>pacManY</span> &lt; <span class=SpellE><span
-class=GramE>canvas.height</span></span> - <span class=SpellE>pacManRadius</span>)
-<span class=SpellE>pacManY</span> += <span class=SpellE>pacSpeed</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>if</span> (<span class=SpellE>keys</span>['<span class=SpellE>ArrowLeft</span>']
-&amp;&amp; <span class=SpellE>pacManX</span> &gt; <span class=SpellE>pacManRadius</span>)
-<span class=SpellE>pacManX</span> -= <span class=SpellE>pacSpeed</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>if</span> (<span class=SpellE>keys</span>['<span class=SpellE>ArrowRight</span>']
-&amp;&amp; <span class=SpellE>pacManX</span> &lt; <span class=SpellE><span
-class=GramE>canvas.width</span></span> - <span class=SpellE>pacManRadius</span>)
-<span class=SpellE>pacManX</span> += <span class=SpellE>pacSpeed</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>if</span> <span class=GramE>(!<span class=SpellE>keys</span></span>['<span
-class=SpellE>ArrowUp</span>'] &amp;&amp; !<span class=SpellE>keys</span>['<span
-class=SpellE>ArrowDown</span>'] &amp;&amp; !<span class=SpellE>keys</span>['<span
-class=SpellE>ArrowLeft</span>'] &amp;&amp; !<span class=SpellE>keys</span>['<span
-class=SpellE>ArrowRight</span>']) {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>const</span> <span class=SpellE>dx</span> = <span class=SpellE>mouseX</span>
-- <span class=SpellE>pacManX</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>const</span> <span class=SpellE>dy</span> = <span class=SpellE>mouseY</span>
-- <span class=SpellE>pacManY</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>const</span> <span class=SpellE>dist</span> = <span class=SpellE>Math.hypot</span>(<span
-class=SpellE>dx</span>, <span class=SpellE>dy</span>);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>if</span> (<span class=SpellE>dist</span> &gt; 1) {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span><span
-class=SpellE>pacManX</span> += (<span class=SpellE>dx</span> / <span
-class=SpellE>dist</span>) * <span class=SpellE>pacSpeed</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span><span
-class=SpellE>pacManY</span> += (<span class=SpellE>dy</span> / <span
-class=SpellE>dist</span>) * <span class=SpellE>pacSpeed</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>// Distância até
-o fantasma<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>const</span> <span class=SpellE>dxG</span> = <span class=SpellE>pacManX</span>
-- <span class=SpellE>ghost.x</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>const</span> <span class=SpellE>dyG</span> = <span class=SpellE>pacManY</span>
-- <span class=SpellE><span class=GramE>ghost.y</span></span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>     </span><span
-style='mso-spacerun:yes'> </span><span class=SpellE>const</span> <span
-class=SpellE>distG</span> = <span class=SpellE>Math.hypot</span>(<span
-class=SpellE>dxG</span>, <span class=SpellE>dyG</span>);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>// Modo de fuga
-ou perseguição<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>if</span> (<span class=SpellE>powerUpActive</span>) {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>ghost.x</span> -= (<span class=SpellE>dxG</span> / <span
-class=SpellE>distG</span>) * <span class=SpellE><span class=GramE>ghost.speed</span></span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE><span class=GramE>ghost.y</span></span> -= (<span class=SpellE>dyG</span>
-/ <span class=SpellE>distG</span>) * <span class=SpellE>ghost.speed</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>if</span> (<span class=SpellE>ghost.x</span> &lt; <span
-class=SpellE><span class=GramE>ghost.radius</span></span>) <span class=SpellE>ghost.x</span>
-= <span class=SpellE>ghost.radius</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>if</span> (<span class=SpellE>ghost.x</span> &gt; <span
-class=SpellE><span class=GramE>canvas.width</span></span> - <span class=SpellE>ghost.radius</span>)
-<span class=SpellE>ghost.x</span> = <span class=SpellE>canvas.width</span> - <span
-class=SpellE>ghost.radius</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>if</span> (<span class=SpellE><span class=GramE>ghost.y</span></span>
-&lt; <span class=SpellE>ghost.radius</span>) <span class=SpellE>ghost.y</span>
-= <span class=SpellE>ghost.radius</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>if</span> (<span class=SpellE><span class=GramE>ghost.y</span></span>
-&gt; <span class=SpellE>canvas.height</span> - <span class=SpellE>ghost.radius</span>)
-<span class=SpellE>ghost.y</span> = <span class=SpellE>canvas.height</span> - <span
-class=SpellE>ghost.radius</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>} <span
-class=SpellE>else</span> {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>if</span> (<span class=SpellE>distG</span> &gt; 5) {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span><span
-class=SpellE>ghost.x</span> += (<span class=SpellE>dxG</span> / <span
-class=SpellE>distG</span>) * <span class=SpellE><span class=GramE>ghost.speed</span></span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span><span
-class=SpellE><span class=GramE>ghost.y</span></span> += (<span class=SpellE>dyG</span>
-/ <span class=SpellE>distG</span>) * <span class=SpellE>ghost.speed</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>// Toca som de
-tensão se fantasma estiver próximo<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>if</span> (<span class=SpellE>distG</span> &lt; 150 &amp;<span
-class=GramE>&amp; !<span class=SpellE>powerUpActive</span></span>) {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE><span class=GramE>startGhostTensionSound</span></span><span
-class=GramE>(</span>);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>updateGhostTensionSound</span>(<span class=SpellE>distG</span>);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>} <span
-class=SpellE>else</span> {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE><span class=GramE>stopGhostTensionSound</span></span><span
-class=GramE>(</span>);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>// Colisão com
-fantasma (só se não estiver em modo <span class=SpellE>power-up</span>)<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>if</span> (<span class=SpellE>distG</span> &lt; <span
-class=SpellE>pacManRadius</span> + <span class=SpellE><span class=GramE>ghost.radius</span></span>
-&amp;&amp; !<span class=SpellE>powerUpActive</span>) {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE><span class=GramE>stopGhostTensionSound</span></span><span
-class=GramE>(</span>);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE><span class=GramE>resetGame</span></span><span class=GramE>(</span>);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>requestAnimationFrame</span>(loop);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>return</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>// Animação da
-boca<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>mouthAngle</span> += <span class=SpellE><span class=GramE>mouthOpen</span></span><span
-class=GramE> ?</span> <span class=GramE>0.02 :</span> -0.02;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>if</span> (<span class=SpellE>mouthAngle</span> &gt; 0.4) <span
-class=SpellE>mouthOpen</span> = false;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>if</span> (<span class=SpellE>mouthAngle</span> &lt; 0.1) <span
-class=SpellE>mouthOpen</span> = <span class=SpellE>true</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>// Desenha <span
-class=SpellE>dots</span><o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE><span class=GramE>dots.forEach</span></span>(<span class=SpellE>dot</span>
-=&gt; {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE><span class=GramE>ctx.beginPath</span></span>();<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=GramE>ctx.arc(</span><span class=SpellE>dot.x</span>, <span class=SpellE>dot.y</span>,
-<span class=SpellE>dotRadius</span>, 0, <span class=SpellE>Math.PI</span> * 2);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE><span class=GramE>ctx.fillStyle</span></span> = cores.dot;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE><span class=GramE>ctx.fill</span></span>();<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>});<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>// Colisão com <span
-class=SpellE>dots</span><o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>for (<span
-class=SpellE>let</span> i = <span class=SpellE><span class=GramE>dots.length</span></span>
-- 1; i &gt;= 0; i--) {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>const</span> <span class=SpellE>dx</span> = <span class=SpellE>dots</span>[i].x
-- <span class=SpellE>pacManX</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>const</span> <span class=SpellE>dy</span> = <span class=SpellE>dots</span>[i<span
-class=GramE>].y</span> - <span class=SpellE>pacManY</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>const</span> <span class=SpellE>dist</span> = <span class=SpellE>Math.hypot</span>(<span
-class=SpellE>dx</span>, <span class=SpellE>dy</span>);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>if</span> (<span class=SpellE>dist</span> &lt; <span class=SpellE>pacManRadius</span>
-+ <span class=SpellE>dotRadius</span>) {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span><span
-class=SpellE><span class=GramE>dots.splice</span></span>(i, 1);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span>score++;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span><span
-class=SpellE>scoreElement.textContent</span> = `Pontos: ${score}`;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>if</span> (<span class=SpellE><span class=GramE>dots.length</span></span>
-=== 0) {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE><span class=GramE>setTimeout</span></span><span class=GramE>(</span>()
-=&gt; {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span><span
-class=SpellE><span class=GramE>createDots</span></span><span class=GramE>(</span>);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span><span
-class=SpellE>if</span> <span class=GramE>(!<span class=SpellE>powerUpActive</span></span>
-&amp;&amp; !<span class=SpellE>powerUpVisible</span>) <span class=SpellE>spawnPowerUp</span>();<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>}, 500);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>// Desenha
-Power-<span class=SpellE>up</span><o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>if</span> (<span class=SpellE>powerUpVisible</span>) {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE><span class=GramE>ctx.beginPath</span></span>();<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=GramE>ctx.arc(</span><span class=SpellE>powerUp.x</span>, <span
-class=SpellE>powerUp.y</span>, <span class=SpellE>powerUpRadius</span>, 0, <span
-class=SpellE>Math.PI</span> * 2);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE><span class=GramE>ctx.fillStyle</span></span> = <span
-class=SpellE>cores.amarelo</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE><span class=GramE>ctx.fill</span></span>();<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE><span class=GramE>ctx.beginPath</span></span>();<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE><span class=GramE>ctx.moveTo</span></span>(<span class=SpellE>powerUp.x</span>,
-<span class=SpellE>powerUp.y</span>);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE><span class=GramE>ctx.lineTo</span></span>(<span class=SpellE>powerUp.x</span>
-+ 50, <span class=SpellE>powerUp.y</span> - 50); // Raio direito<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE><span class=GramE>ctx.strokeStyle</span></span> = <span
-class=SpellE>cores.vermelho</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE><span class=GramE>ctx.lineWidth</span></span> = 5;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE><span class=GramE>ctx.stroke</span></span>();<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE><span class=GramE>ctx.beginPath</span></span>();<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=GramE>ctx.arc(</span><span class=SpellE>powerUp.x</span>, <span
-class=SpellE>powerUp.y</span>, <span class=SpellE>powerUpRadius</span> * 1.2,
-0, <span class=SpellE>Math.PI</span> * 2);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE><span class=GramE>ctx.strokeStyle</span></span> = <span
-class=SpellE>cores.azul</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE><span class=GramE>ctx.lineWidth</span></span> = 3;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE><span class=GramE>ctx.stroke</span></span>();<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>// Colisão com
-Power-<span class=SpellE>up</span><o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>if</span> (<span class=SpellE>powerUpVisible</span>) {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>const</span> <span class=SpellE>dxP</span> = <span class=SpellE>powerUp.x</span>
-- <span class=SpellE>pacManX</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>const</span> <span class=SpellE>dyP</span> = <span class=SpellE>powerUp.y</span>
-- <span class=SpellE>pacManY</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>const</span> <span class=SpellE>distP</span> = <span class=SpellE>Math.hypot</span>(<span
-class=SpellE>dxP</span>, <span class=SpellE>dyP</span>);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>if</span> (<span class=SpellE>distP</span> &lt; <span
-class=SpellE>pacManRadius</span> + <span class=SpellE>powerUpRadius</span>) {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span><span
-class=SpellE>powerUpVisible</span> = false;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span><span
-class=SpellE>powerUpActive</span> = <span class=SpellE>true</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span><span
-class=SpellE>powerUpTimer</span> = 5;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span><span
-class=SpellE>messageElement.textContent</span> = &quot;Fantasma fugindo!&quot;;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span><span
-class=SpellE><span class=GramE>setTimeout</span></span><span class=GramE>(</span>()
-=&gt; { <span class=SpellE>messageElement.textContent</span> = &quot;&quot;; },
-1000);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span>// <span
-style='font-family:"Segoe UI Emoji",sans-serif;mso-bidi-font-family:"Segoe UI Emoji"'>&#127925;</span>
-Som de coleta<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span><span
-class=SpellE><span class=GramE>playSound</span></span><span class=GramE>(</span>600,
-0.15, '<span class=SpellE>square</span>', 0.3);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span><span
-class=SpellE><span class=GramE>playSound</span></span><span class=GramE>(</span>800,
-0.1, '<span class=SpellE>sine</span>', 0.2); // Efeito &quot;<span
-class=SpellE>ping</span>&quot;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span>// <span
-style='font-family:"Segoe UI Emoji",sans-serif;mso-bidi-font-family:"Segoe UI Emoji"'>&#128165;</span>
-Explosão de partículas<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span><span
-class=GramE>explode(</span><span class=SpellE>powerUp.x</span>, <span
-class=SpellE>powerUp.y</span>, <span class=SpellE>cores.amarelo</span>, 20);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>// <span
-class=SpellE>Respawn</span> aleatório do <span class=SpellE>power-up</span><o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>if</span> <span class=GramE>(!<span class=SpellE>powerUpVisible</span></span>
-&amp;&amp; <span class=SpellE>Math.random</span>() &lt; 0.002 &amp;&amp; !<span
-class=SpellE>powerUpActive</span> &amp;&amp; <span class=SpellE>dots.length</span>
-&gt; 5) {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE><span class=GramE>spawnPowerUp</span></span><span class=GramE>(</span>);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>// Atualiza
-partículas<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>for (<span
-class=SpellE>let</span> i = <span class=SpellE><span class=GramE>particles.length</span></span>
-- 1; i &gt;= 0; i--) {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>const</span> p = <span class=SpellE>particles</span>[i];<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>p.x</span> += <span class=SpellE><span class=GramE>p.vx</span></span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE><span class=GramE>p.y</span></span> += <span class=SpellE>p.vy</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE><span class=GramE>p.vy</span></span> += 0.1; // Gravidade leve<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE><span class=GramE>p.alpha</span></span> -= <span class=SpellE>p.decay</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>if</span> (<span class=SpellE><span class=GramE>p.alpha</span></span>
-&lt;= 0) {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span><span
-class=SpellE><span class=GramE>particles.splice</span></span>(i, 1);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>          </span>continue;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE><span class=GramE>ctx.beginPath</span></span>();<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=GramE>ctx.arc(</span><span class=SpellE>p.x</span>, <span class=SpellE>p.y</span>,
-<span class=SpellE>p.radius</span>, 0, <span class=SpellE>Math.PI</span> * 2);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE><span class=GramE>ctx.fillStyle</span></span> = `${<span
-class=SpellE>p.color</span>}${<span class=SpellE>Math.floor</span>(<span
-class=SpellE>p.alpha</span> * 255).<span class=SpellE>toString</span>(16).<span
-class=SpellE>padStart</span>(2, '0')}`;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE><span class=GramE>ctx.fill</span></span>();<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>// Desenha <span
-class=SpellE>Pac</span>-Man<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE><span class=GramE>ctx.beginPath</span></span>();<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=GramE>ctx.arc(</span><span class=SpellE>pacManX</span>, <span
-class=SpellE>pacManY</span>, <span class=SpellE>pacManRadius</span>, <span
-class=SpellE>mouthAngle</span> * <span class=SpellE>Math.PI</span>, (2 - <span
-class=SpellE>mouthAngle</span>) * <span class=SpellE>Math.PI</span>);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE><span class=GramE>ctx.lineTo</span></span>(<span class=SpellE>pacManX</span>,
-<span class=SpellE>pacManY</span>);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE><span class=GramE>ctx.closePath</span></span>();<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE><span class=GramE>ctx.fillStyle</span></span> = <span
-class=SpellE>cores.preto</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE><span class=GramE>ctx.fill</span></span>();<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE><span class=GramE>ctx.beginPath</span></span>();<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=GramE>ctx.arc(</span><span class=SpellE>pacManX</span> + 10, <span
-class=SpellE>pacManY</span> - 10, 3, 0, <span class=SpellE>Math.PI</span> * 2);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE><span class=GramE>ctx.fillStyle</span></span> = <span
-class=SpellE>cores.vermelho</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE><span class=GramE>ctx.fill</span></span>();<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>// Desenha
-fantasma<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>const</span> <span class=SpellE>ghostColor</span> = <span
-class=SpellE><span class=GramE>powerUpActive</span></span><span class=GramE> ?</span>
-<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span>(<span
-class=SpellE>Math.floor</span>(<span class=SpellE><span class=GramE>Date.now</span></span><span
-class=GramE>(</span>) / 100) % 2 === 0 ? '#0000FF<span class=GramE>' :</span>
-'#3333FF') : <o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE><span class=GramE>cores.cinza</span></span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE><span class=GramE>ctx.beginPath</span></span>();<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=GramE>ctx.arc(</span><span class=SpellE>ghost.x</span>, <span
-class=SpellE>ghost.y</span> - <span class=SpellE>ghost.radius</span> + 5, <span
-class=SpellE>ghost.radius</span> - 6, 0, <span class=SpellE>Math.PI</span> *
-2);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE><span class=GramE>ctx.moveTo</span></span>(<span class=SpellE>ghost.x</span>
-- <span class=SpellE>ghost.radius</span>, <span class=SpellE>ghost.y</span>);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>const</span> <span class=SpellE>waveHeight</span> = 5;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>const</span> <span class=SpellE>segments</span> = 5;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>const</span> <span class=SpellE>segmentWidth</span> = (2 * <span
-class=SpellE><span class=GramE>ghost.radius</span></span>) / <span
-class=SpellE>segments</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>for (<span
-class=SpellE>let</span> i = 0; i &lt;= <span class=SpellE>segments</span>; i++)
-{<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>const</span> x = <span class=SpellE>ghost.x</span> - <span
-class=SpellE><span class=GramE>ghost.radius</span></span> + i * <span
-class=SpellE>segmentWidth</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>const</span> y = <span class=SpellE><span class=GramE>ghost.y</span></span>
-+ ((i % 2) === 0 ? <span class=SpellE>waveHeight</span> : 0);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE><span class=GramE>ctx.lineTo</span></span>(x, y);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE><span class=GramE>ctx.lineTo</span></span>(<span class=SpellE>ghost.x</span>
-+ <span class=SpellE>ghost.radius</span>, <span class=SpellE>ghost.y</span>);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE><span class=GramE>ctx.lineTo</span></span>(<span class=SpellE>ghost.x</span>
-+ <span class=SpellE>ghost.radius</span>, <span class=SpellE>ghost.y</span> - <span
-class=SpellE>ghost.radius</span> + 5);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=GramE>ctx.arc(</span><span class=SpellE>ghost.x</span>, <span
-class=SpellE>ghost.y</span> - <span class=SpellE>ghost.radius</span> + 5, <span
-class=SpellE>ghost.radius</span> - 6, 0, <span class=SpellE>Math.PI</span>, <span
-class=SpellE>true</span>);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE><span class=GramE>ctx.fillStyle</span></span> = <span
-class=SpellE>ghostColor</span>;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE><span class=GramE>ctx.fill</span></span>();<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>// Olhos<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE><span class=GramE>ctx.beginPath</span></span>();<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=GramE>ctx.arc(</span><span class=SpellE>ghost.x</span> - 8, <span
-class=SpellE>ghost.y</span> - 10, 4, 0, <span class=SpellE>Math.PI</span> * 2);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=GramE>ctx.arc(</span><span class=SpellE>ghost.x</span> + 8, <span
-class=SpellE>ghost.y</span> - 10, 4, 0, <span class=SpellE>Math.PI</span> * 2);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE><span class=GramE>ctx.fillStyle</span></span> = '<span
-class=SpellE>white</span>';<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE><span class=GramE>ctx.fill</span></span>();<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>const</span> <span class=SpellE>pupilX</span> = <span
-class=SpellE><span class=GramE>powerUpActive</span></span><span class=GramE> ?</span>
-<span class=GramE>0 :</span> 2;<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE><span class=GramE>ctx.beginPath</span></span>();<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=GramE>ctx.arc(</span><span class=SpellE>ghost.x</span> - 8 + <span
-class=SpellE>pupilX</span>, <span class=SpellE>ghost.y</span> - 12, 2, 0, <span
-class=SpellE>Math.PI</span> * 2);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=GramE>ctx.arc(</span><span class=SpellE>ghost.x</span> + 8 + <span
-class=SpellE>pupilX</span>, <span class=SpellE>ghost.y</span> - 12, 2, 0, <span
-class=SpellE>Math.PI</span> * 2);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE><span class=GramE>ctx.fillStyle</span></span> = <span
-class=SpellE>powerUpActive</span> ? '<span class=SpellE>white</span><span
-class=GramE>' :</span> 'blue';<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE><span class=GramE>ctx.fill</span></span>();<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>requestAnimationFrame</span>(loop);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span class=GramE>loop(</span>);<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>// Tela inicial<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>const</span> <span class=SpellE>startScreen</span> = <span
-class=SpellE><span class=GramE>document.getElementById</span></span>('<span
-class=SpellE>startScreen</span>');<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span><span
-class=SpellE>startScreen.addEventListener</span>('click', () =&gt; {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE><span class=GramE>startScreen.style.display</span></span> = '<span
-class=SpellE>none</span>';<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span><span
-style='mso-spacerun:yes'>    </span><span class=SpellE><span class=GramE>canvas.style</span>.display</span>
-= '<span class=SpellE>block</span>';<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span><span
-class=SpellE>if</span> (<span class=SpellE>audioCtx.state</span> === '<span
-class=SpellE>suspended</span>') {<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>        </span><span
-class=SpellE>audioCtx.resume</span>();<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>      </span>}<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>    </span>});<o:p></o:p></p>
-
-<p class=MsoNormal><span style='mso-spacerun:yes'>  </span>&lt;/script&gt;<o:p></o:p></p>
-
-<p class=MsoNormal>&lt;/body&gt;<o:p></o:p></p>
-
-<p class=MsoNormal>&lt;/<span class=SpellE>html</span>&gt;</p>
-
-</div>
-
+<body>
+  <h1>Pac-Man Estilo Azul</h1>
+  <div id="score">Pontos: 0</div>
+  <div id="power-timer"></div>
+  <div id="message"></div>
+  <div id="startScreen" style="position: relative; width: 600px; height: 400px; background: url('assets/logo.jpg') center/cover; border: 2px solid #0000FF; cursor: pointer; display: flex; align-items: center; justify-content: center;">
+    <div style="background: rgba(0,0,0,0.7); padding: 20px; border-radius: 10px; text-align: center;">
+      <h2 style="color: #FFFF00; margin: 0 0 10px 0;">CLIQUE PARA JOGAR</h2>
+      <p style="color: white; margin: 0;">Use as setas ou mouse para se mover</p>
+    </div>
+  </div>
+  <canvas id="gameCanvas" width="600" height="400" style="display: none;"></canvas>
+  <script>
+    const canvas = document.getElementById('gameCanvas');
+    const ctx = canvas.getContext('2d');
+    const scoreElement = document.getElementById('score');
+    const timerElement = document.getElementById('power-timer');
+    const messageElement = document.getElementById('message');
+    // Web Audio API
+    const AudioContext = window.AudioContext || window.webkitAudioContext;
+    const audioCtx = new AudioContext();
+    // Cores
+    const cores = {
+      azul: '#0000FF',
+      vermelho: '#FF0000',
+      cinza: '#AAAAAA',
+      amarelo: '#FFFF00',
+      dot: '#00FFFF',
+      preto: '#000000'
+    };
+    // Pac-Man
+    let pacManX = 300;
+    let pacManY = 200;
+    const pacManRadius = 30;
+    // Velocidade
+    const pacSpeed = 3;
+    // Teclado
+    const keys = {};
+    window.addEventListener('keydown', (e) => {
+      keys[e.key] = true;
+    });
+    window.addEventListener('keyup', (e) => {
+      keys[e.key] = false;
+    });
+    // Mouse
+    let mouseX = pacManX;
+    let mouseY = pacManY;
+    canvas.addEventListener('mousemove', (e) => {
+      const rect = canvas.getBoundingClientRect();
+      mouseX = e.clientX - rect.left;
+      mouseY = e.clientY - rect.top;
+    });
+    // Fantasma
+    let ghost = {
+      x: 100,
+      y: 100,
+      radius: 26,
+      speed: 2.2
+    };
+    // Dots
+    const dots = [];
+    const dotRadius = 6;
+    // Power-up
+    let powerUp = { x: -50, y: -50 };
+    const powerUpRadius = 10;
+    let powerUpActive = false;
+    let powerUpTimer = 0;
+    let powerUpVisible = false;
+    // Partículas de explosão
+    const particles = [];
+    function createParticle(x, y, color) {
+      return {
+        x, y,
+        vx: (Math.random() - 0.5) * 8,
+        vy: (Math.random() - 0.5) * 8,
+        radius: Math.random() * 3 + 2,
+        color,
+        alpha: 1,
+        decay: Math.random() * 0.05 + 0.02
+      };
+    }
+    function explode(x, y, color, count = 15) {
+      for (let i = 0; i < count; i++) {
+        particles.push(createParticle(x, y, color));
+      }
+    }
+    function createDots() {
+      dots.length = 0;
+      for (let i = 0; i < 20; i++) {
+        let x, y;
+        let overlap;
+        do {
+          overlap = false;
+          x = dotRadius * 3 + Math.random() * (canvas.width - dotRadius * 6);
+          y = dotRadius * 3 + Math.random() * (canvas.height - dotRadius * 6);
+          if (Math.hypot(x - pacManX, y - pacManY) < 50) {
+            overlap = true;
+            continue;
+          }
+          for (const dot of dots) {
+            if (Math.hypot(dot.x - x, dot.y - y) < 30) {
+              overlap = true;
+              break;
+            }
+          }
+        } while (overlap);
+        dots.push({ x, y });
+      }
+    }
+    function spawnPowerUp() {
+      let x, y;
+      do {
+        x = powerUpRadius * 2 + Math.random() * (canvas.width - powerUpRadius * 4);
+        y = powerUpRadius * 2 + Math.random() * (canvas.height - powerUpRadius * 4);
+      } while (
+        Math.hypot(x - pacManX, y - pacManY) < 50 ||
+        dots.some(dot => Math.hypot(dot.x - x, dot.y - y) < 30)
+      );
+      powerUp = { x, y };
+      powerUpVisible = true;
+    }
+    createDots();
+    setTimeout(spawnPowerUp, 3000);
+    let score = 0;
+    let ghostSoundActive = false;
+    let ghostSoundOsc = null;
+    let ghostSoundGain = null;
+    // Função para tocar som
+    function playSound(frequency, duration, type = 'sine', volume = 0.2) {
+      if (audioCtx.state === 'suspended') audioCtx.resume();
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+      osc.type = type;
+      osc.frequency.setValueAtTime(frequency, audioCtx.currentTime);
+      gain.gain.setValueAtTime(volume, audioCtx.currentTime);
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+      osc.start();
+      osc.stop(audioCtx.currentTime + duration);
+    }
+    // Som de tensão (fantasma próximo)
+    function startGhostTensionSound() {
+      if (ghostSoundActive || !audioCtx) return;
+      ghostSoundActive = true;
+      ghostSoundOsc = audioCtx.createOscillator();
+      ghostSoundGain = audioCtx.createGain();
+      ghostSoundOsc.type = 'sawtooth';
+      ghostSoundOsc.frequency.setValueAtTime(120, audioCtx.currentTime);
+      ghostSoundGain.gain.setValueAtTime(0.1, audioCtx.currentTime);
+      ghostSoundOsc.connect(ghostSoundGain);
+      ghostSoundGain.connect(audioCtx.destination);
+      ghostSoundOsc.start();
+    }
+    function updateGhostTensionSound(distance) {
+      if (!ghostSoundActive) return;
+      const minDist = 100;
+      const maxVol = 0.2;
+      const vol = Math.max(0, (minDist - distance) / minDist) * maxVol;
+      if (ghostSoundGain) {
+        ghostSoundGain.gain.setValueAtTime(vol, audioCtx.currentTime);
+      }
+    }
+    function stopGhostTensionSound() {
+      if (ghostSoundActive && ghostSoundOsc) {
+        ghostSoundOsc.stop();
+        ghostSoundOsc = null;
+        ghostSoundGain = null;
+        ghostSoundActive = false;
+      }
+    }
+    // Animação da boca
+    let mouthOpen = true;
+    let mouthAngle = 0.2;
+    function resetGame() {
+      score = 0;
+      scoreElement.textContent = `Pontos: ${score}`;
+      messageElement.textContent = "Você foi pego! Reiniciando...";
+      setTimeout(() => {
+        messageElement.textContent = "";
+        pacManX = 300;
+        pacManY = 200;
+        ghost.x = 100;
+        ghost.y = 100;
+        createDots();
+        if (!powerUpActive) spawnPowerUp();
+      }, 1000);
+    }
+    // Loop principal
+    function loop() {
+      // Atualiza temporizador
+      if (powerUpActive) {
+        powerUpTimer -= 1/60;
+        if (powerUpTimer <= 0) {
+          powerUpActive = false;
+          timerElement.textContent = "";
+        } else {
+          timerElement.textContent = `Power: ${Math.ceil(powerUpTimer)}s`;
+        }
+      } else {
+        timerElement.textContent = "";
+      }
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      // Movimento do Pac-Man
+      if (keys['ArrowUp'] && pacManY > pacManRadius) pacManY -= pacSpeed;
+      if (keys['ArrowDown'] && pacManY < canvas.height - pacManRadius) pacManY += pacSpeed;
+      if (keys['ArrowLeft'] && pacManX > pacManRadius) pacManX -= pacSpeed;
+      if (keys['ArrowRight'] && pacManX < canvas.width - pacManRadius) pacManX += pacSpeed;
+      if (!keys['ArrowUp'] && !keys['ArrowDown'] && !keys['ArrowLeft'] && !keys['ArrowRight']) {
+        const dx = mouseX - pacManX;
+        const dy = mouseY - pacManY;
+        const dist = Math.hypot(dx, dy);
+        if (dist > 1) {
+          pacManX += (dx / dist) * pacSpeed;
+          pacManY += (dy / dist) * pacSpeed;
+        }
+      }
+      // Distância até o fantasma
+      const dxG = pacManX - ghost.x;
+      const dyG = pacManY - ghost.y;
+      const distG = Math.hypot(dxG, dyG);
+      // Modo de fuga ou perseguição
+      if (powerUpActive) {
+        ghost.x -= (dxG / distG) * ghost.speed;
+        ghost.y -= (dyG / distG) * ghost.speed;
+        if (ghost.x < ghost.radius) ghost.x = ghost.radius;
+        if (ghost.x > canvas.width - ghost.radius) ghost.x = canvas.width - ghost.radius;
+        if (ghost.y < ghost.radius) ghost.y = ghost.radius;
+        if (ghost.y > canvas.height - ghost.radius) ghost.y = canvas.height - ghost.radius;
+      } else {
+        if (distG > 5) {
+          ghost.x += (dxG / distG) * ghost.speed;
+          ghost.y += (dyG / distG) * ghost.speed;
+        }
+      }
+      // Toca som de tensão se fantasma estiver próximo
+      if (distG < 150 && !powerUpActive) {
+        startGhostTensionSound();
+        updateGhostTensionSound(distG);
+      } else {
+        stopGhostTensionSound();
+      }
+      // Colisão com fantasma (só se não estiver em modo power-up)
+      if (distG < pacManRadius + ghost.radius && !powerUpActive) {
+        stopGhostTensionSound();
+        resetGame();
+        requestAnimationFrame(loop);
+        return;
+      }
+      // Animação da boca
+      mouthAngle += mouthOpen ? 0.02 : -0.02;
+      if (mouthAngle > 0.4) mouthOpen = false;
+      if (mouthAngle < 0.1) mouthOpen = true;
+      // Desenha dots
+      dots.forEach(dot => {
+        ctx.beginPath();
+        ctx.arc(dot.x, dot.y, dotRadius, 0, Math.PI * 2);
+        ctx.fillStyle = cores.dot;
+        ctx.fill();
+      });
+      // Colisão com dots
+      for (let i = dots.length - 1; i >= 0; i--) {
+        const dx = dots[i].x - pacManX;
+        const dy = dots[i].y - pacManY;
+        const dist = Math.hypot(dx, dy);
+        if (dist < pacManRadius + dotRadius) {
+          dots.splice(i, 1);
+          score++;
+          scoreElement.textContent = `Pontos: ${score}`;
+        }
+      }
+      if (dots.length === 0) {
+        setTimeout(() => {
+          createDots();
+          if (!powerUpActive && !powerUpVisible) spawnPowerUp();
+        }, 500);
+      }
+      // Desenha Power-up
+      if (powerUpVisible) {
+        ctx.beginPath();
+        ctx.arc(powerUp.x, powerUp.y, powerUpRadius, 0, Math.PI * 2);
+        ctx.fillStyle = cores.amarelo;
+        ctx.fill();
+        ctx.beginPath();
+        ctx.moveTo(powerUp.x, powerUp.y);
+        ctx.lineTo(powerUp.x + 50, powerUp.y - 50); // Raio direito
+        ctx.strokeStyle = cores.vermelho;
+        ctx.lineWidth = 5;
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(powerUp.x, powerUp.y, powerUpRadius * 1.2, 0, Math.PI * 2);
+        ctx.strokeStyle = cores.azul;
+        ctx.lineWidth = 3;
+        ctx.stroke();
+      }
+      // Colisão com Power-up
+      if (powerUpVisible) {
+        const dxP = powerUp.x - pacManX;
+        const dyP = powerUp.y - pacManY;
+        const distP = Math.hypot(dxP, dyP);
+        if (distP < pacManRadius + powerUpRadius) {
+          powerUpVisible = false;
+          powerUpActive = true;
+          powerUpTimer = 5;
+          messageElement.textContent = "Fantasma fugindo!";
+          setTimeout(() => { messageElement.textContent = ""; }, 1000);
+          // 🎵 Som de coleta
+          playSound(600, 0.15, 'square', 0.3);
+          playSound(800, 0.1, 'sine', 0.2); // Efeito "ping"
+          // 💥 Explosão de partículas
+          explode(powerUp.x, powerUp.y, cores.amarelo, 20);
+        }
+      }
+      // Respawn aleatório do power-up
+      if (!powerUpVisible && Math.random() < 0.002 && !powerUpActive && dots.length > 5) {
+        spawnPowerUp();
+      }
+      // Atualiza partículas
+      for (let i = particles.length - 1; i >= 0; i--) {
+        const p = particles[i];
+        p.x += p.vx;
+        p.y += p.vy;
+        p.vy += 0.1; // Gravidade leve
+        p.alpha -= p.decay;
+        if (p.alpha <= 0) {
+          particles.splice(i, 1);
+          continue;
+        }
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+        ctx.fillStyle = `${p.color}${Math.floor(p.alpha * 255).toString(16).padStart(2, '0')}`;
+        ctx.fill();
+      }
+      // Desenha Pac-Man
+      ctx.beginPath();
+      ctx.arc(pacManX, pacManY, pacManRadius, mouthAngle * Math.PI, (2 - mouthAngle) * Math.PI);
+      ctx.lineTo(pacManX, pacManY);
+      ctx.closePath();
+      ctx.fillStyle = cores.preto;
+      ctx.fill();
+      ctx.beginPath();
+      ctx.arc(pacManX + 10, pacManY - 10, 3, 0, Math.PI * 2);
+      ctx.fillStyle = cores.vermelho;
+      ctx.fill();
+      // Desenha fantasma
+      const ghostColor = powerUpActive ? 
+        (Math.floor(Date.now() / 100) % 2 === 0 ? '#0000FF' : '#3333FF') : 
+        cores.cinza;
+      ctx.beginPath();
+      ctx.arc(ghost.x, ghost.y - ghost.radius + 5, ghost.radius - 6, 0, Math.PI * 2);
+      ctx.moveTo(ghost.x - ghost.radius, ghost.y);
+      const waveHeight = 5;
+      const segments = 5;
+      const segmentWidth = (2 * ghost.radius) / segments;
+      for (let i = 0; i <= segments; i++) {
+        const x = ghost.x - ghost.radius + i * segmentWidth;
+        const y = ghost.y + ((i % 2) === 0 ? waveHeight : 0);
+        ctx.lineTo(x, y);
+      }
+      ctx.lineTo(ghost.x + ghost.radius, ghost.y);
+      ctx.lineTo(ghost.x + ghost.radius, ghost.y - ghost.radius + 5);
+      ctx.arc(ghost.x, ghost.y - ghost.radius + 5, ghost.radius - 6, 0, Math.PI, true);
+      ctx.fillStyle = ghostColor;
+      ctx.fill();
+      // Olhos
+      ctx.beginPath();
+      ctx.arc(ghost.x - 8, ghost.y - 10, 4, 0, Math.PI * 2);
+      ctx.arc(ghost.x + 8, ghost.y - 10, 4, 0, Math.PI * 2);
+      ctx.fillStyle = 'white';
+      ctx.fill();
+      const pupilX = powerUpActive ? 0 : 2;
+      ctx.beginPath();
+      ctx.arc(ghost.x - 8 + pupilX, ghost.y - 12, 2, 0, Math.PI * 2);
+      ctx.arc(ghost.x + 8 + pupilX, ghost.y - 12, 2, 0, Math.PI * 2);
+      ctx.fillStyle = powerUpActive ? 'white' : 'blue';
+      ctx.fill();
+      requestAnimationFrame(loop);
+    }
+    loop();
+    // Tela inicial
+    const startScreen = document.getElementById('startScreen');
+    startScreen.addEventListener('click', () => {
+      startScreen.style.display = 'none';
+      canvas.style.display = 'block';
+      if (audioCtx.state === 'suspended') {
+        audioCtx.resume();
+      }
+    });
+  </script>
 </body>
-
 </html>
